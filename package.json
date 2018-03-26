@@ -1,0 +1,10 @@
+{
+  "name": "angularfire-redux-preso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "roughjs": "^2.0.1"
+  }
+}
