@@ -4,7 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "roughjs": "^2.0.1"
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.js",
+    "min": "uglifyjs --compress --mangle -o dist/index.js -- esm/index.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.57.1",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "typescript": "^2.7.2"
   }
 }

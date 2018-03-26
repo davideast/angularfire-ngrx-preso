@@ -1,45 +1,117 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>AngularFire: NgRx without the Reducers</title>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css">
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-				<section>
-					<pre><code data-trim data-noescape>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>AngularFire: NgRx without the Reducers</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+	<link rel="stylesheet" href="css/preso.css">
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2 class="gold">AngularFire</h2>
+				<h4>NgRx without the Reducers</h4>
+			</section>
+			<section>
+				<img src="/assets/mvc.png" alt="MVC">
+			</section>
+			<section>
+				<img src="/assets/redux.png" alt="Redux">
+			</section>
+			<section>
+				Random childhood story
+			</section>
+
+			<!-- Profile Slide -->
+			<section>
+				<div class="fir-container">
+					<figure class="fir-image-figure">
+				
+						<a class="fir-imageover" rel="noopener" target="_blank" href="https://twitter.com/_davideast">
+							<img class="fir-author-image fir-clickcircle" src="https://avatars2.githubusercontent.com/u/4570265?s=460&v=4" alt="David East - Author">
+							<div class="fir-imageover-color"></div>
+						</a>
+				
+						<figcaption>
+							<div class="fig-author-figure-title">David East</div>
+							<div class="fig-author-figure-title">Developer Advocate for Firebase.</div>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+
+			<!-- Firebase Features Slide(s) -->
+			<section>
+				<img src="/assets/firebase-lockup.png">
+			</section>
+			<section>
+				<h2>A Platform for building</h2>
+			</section>
+			<section>
+				<h2>Building what?</h2>
+			</section>
+			<section>
+				<h2 class="gold">Awesome stuff.</h2>
+			</section>
+			<section data-transition="fade-out">
+				<img src="/assets/firebase-features-0.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/firebase-features-1.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/firebase-features-2.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/firebase-features-3.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/firebase-features-4.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/firebase-features-5.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/firebase-features-6.png">
+			</section>
+			<section>
+				<h3 class="gold">AngularFire</h3>
+				<img src="/assets/angularfire-github.png">
+			</section>
+			<section>
+				<pre><code data-trim data-noescape>
 						const a = "";
 						const b = "";
 					</code></pre>
-				</section>
-			</div>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>

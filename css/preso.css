@@ -1,0 +1,53 @@
+.gold {
+  color: #E7AD52 !important;
+}
+
+:root {
+  --fir-font-article: "adobe-garamond-pro", "Times New Roman", Times;
+  --fir-font-header: "foco", Helvetica;
+  --fir-blue-twitter-alpha: rgba(85,172,238, 0.6);
+  --fir-color-grey: rgba(0,0,0, 0.40);
+  --bg: #111;
+  --text: #E7AD52;
+}
+
+.fir-container {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+.fir-clickcircle {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.fir-image-figure {
+  margin: 0;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  text-decoration: none;
+  text-align: left;
+}
+
+.fir-author-image {
+  position: relative;
+  vertical-align: middle;
+}
+
+.fir-image-figure .caption, .fir-image-figure figcaption {
+  padding-left: 15px;
+}
+
+.fir-image-figure .fig-author-figure-title {
+  color: var(--text);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 2px;
+}
