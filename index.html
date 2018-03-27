@@ -20,7 +20,7 @@
 
 <body>
 	<div class="reveal">
-		<div class="slides">
+		<div id="slides" class="slides">
 			<section>
 				<h2 class="gold">AngularFire</h2>
 				<h4>NgRx without the Reducers</h4>
@@ -30,6 +30,11 @@
 			</section>
 			<section>
 				<img src="/assets/redux.png" alt="Redux">
+			</section>
+			<section>
+				<h3 class="gold">
+					Three circles doesn't tell the whole story
+				</h3>
 			</section>
 			<section>
 				Random childhood story
@@ -69,22 +74,22 @@
 			<section data-transition="fade-out">
 				<img src="/assets/firebase-features-0.png">
 			</section>
-			<section data-transition="fade-in">
+			<section data-transition="none">
 				<img src="/assets/firebase-features-1.png">
 			</section>
-			<section data-transition="fade-in">
+			<section data-transition="none">
 				<img src="/assets/firebase-features-2.png">
 			</section>
-			<section data-transition="fade-in">
+			<section data-transition="none">
 				<img src="/assets/firebase-features-3.png">
 			</section>
-			<section data-transition="fade-in">
+			<section data-transition="none">
 				<img src="/assets/firebase-features-4.png">
 			</section>
-			<section data-transition="fade-in">
+			<section data-transition="none">
 				<img src="/assets/firebase-features-5.png">
 			</section>
-			<section data-transition="fade-in">
+			<section data-transition="none">
 				<img src="/assets/firebase-features-6.png">
 			</section>
 			<section>
@@ -92,10 +97,66 @@
 				<img src="/assets/angularfire-github.png">
 			</section>
 			<section>
-				<pre><code data-trim data-noescape>
-						const a = "";
-						const b = "";
-					</code></pre>
+				<h3>Promise or Callback</h3>
+				<h4 class="gold">to</h4>
+				<h3>Observable</h3>
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/af-features-0.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-features-1.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-features-2.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-features-3.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-features-4.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-features-5.png">
+			</section>
+			<section>
+				<img src="/assets/angularfirestore.png">
+			</section>
+			<section data-transition="none"> 
+				<img src="/assets/angularfirestore-api-0.png">
+			</section>
+			<section data-transition="none"> 
+				<img src="/assets/angularfirestore-api-1.png">
+			</section>
+			<section data-transition="none"> 
+				<img src="/assets/angularfirestore-api-2.png">
+			</section>
+			<section data-transition="fade-in">
+				<img src="/assets/af-model-0.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-model-1.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-model-2.png">
+			</section>
+			<section data-transition="none">
+				<img src="/assets/af-model-3.png">
+			</section>
+			<section>
+				<h3>Isn't this a lot like <span class="gold">NgRx</span>?</h3>
+			</section>
+			<section>
+				<h3>How do I use</h3>
+				<h3><span class="gold">AngularFire</span> with <span class="gold">NgRx</span>?</h3>
+			</section>
+			<section>
+				<p style="text-align: left;">
+					"Instead of trying to memorize how to plug the pieces together you need to <span class="gold">learn the underlying concepts</span>."
+				</p>
+			</section>
+			<section>
+				<h1 class="gold">RxJS</h1>
 			</section>
 		</div>
 	</div>
@@ -104,6 +165,14 @@
 	<script src="js/reveal.js"></script>
 
 	<script>
+		const slides = Array.from(document.querySelectorAll('#slides > section'));
+		slides.forEach((section, i) => {
+			if(slides.length - 1 === i) {
+				section.id = 'last';
+			} else {
+				section.id = `${i}`;
+			}
+		});
 		Reveal.initialize({
 			dependencies: [
 				{ src: 'plugin/markdown/marked.js' },
