@@ -2,6 +2,10 @@
   color: #E7AD52 !important;
 }
 
+.tarheel {
+  color: #52B3E7 !important;
+}
+
 :root {
   --fir-font-article: "adobe-garamond-pro", "Times New Roman", Times;
   --fir-font-header: "foco", Helvetica;
