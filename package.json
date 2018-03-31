@@ -1,16 +1,19 @@
 {
-  "name": "angularfire-redux-preso",
+  "name": "angularfire-redux",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "private": true,
+  "repository": "https://github.com/davideast/angularfire-ngrx-preso.git",
+  "author": "David East <deast@google.com>",
+  "license": "MIT",
   "scripts": {
-    "build": "tsc && rollup -c rollup.config.js",
-    "min": "uglifyjs --compress --mangle -o dist/index.js -- esm/index.js"
+    "sw": "workbox generateSW workbox-config.js",
+    "serve": "firebase serve -p 5033",
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
-    "rollup": "^0.57.1",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "typescript": "^2.7.2"
+    "workbox-cli": "^3.0.1"
+  },
+  "dependencies": {
+    "firebase-tools": "^3.17.7"
   }
 }

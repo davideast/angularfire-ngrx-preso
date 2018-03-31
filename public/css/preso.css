@@ -55,3 +55,20 @@
   font-size: 22px;
   margin-top: 2px;
 }
+
+.sp-btn {
+  cursor: pointer;
+  border: none;
+  min-height: 32px;
+  min-width: 74px;
+  padding: 0 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sp-btn-full {
+  color: #fcfcfc;
+  background-color: #E7AD52;
+}
